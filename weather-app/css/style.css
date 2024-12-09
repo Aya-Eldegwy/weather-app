@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins','sans-serif ';
+}
+body{
+    background-color: #222;
+}
+.card{
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg,#00feba,#5b548a);
+    padding: 3rem 3rem ;
+    border-radius: 20px;
+    margin: 8rem auto 3rem;
+    color: #fff;
+    text-align: center;
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input,
+.search button{
+    border: 0;
+    outline: 0;
+    background-color: #ebfffc;
+    color: #555;
+}
+.search input{
+    flex: 1;
+    max-width: 70%;
+    height: 60px;
+    padding: .75rem 1.5rem;
+    margin-right: 1rem;
+    border-radius: 30px;
+    font-size: 1rem;
+}
+.search button{
+    max-width: 25%;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+.search button img{
+    width: 20px;
+}
+.weather .img-icon{
+    width: 170px;
+    margin-top: .75rem;
+}
+.weather .temp{
+    font-size: 5.75rem;
+    font-weight: 500;
+}
+.weather .city{
+    font-size: 2.75rem;
+    font-weight: 400;
+    margin-top: -.5rem;
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1.25px;
+    margin-top: 3.25rem;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+.humidity,.wind{
+    font-size: 1.5rem;
+    margin-top: -.75rem;
+}
+.weather{
+    display: none;
+}
+.erro{
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 14px;
+    display: none;
+}
+/* ==== for small diveces */
+@media  screen and (max-width:320px) {
+    .card{
+        padding: 3rem 1rem;
+    }
+    .search input{
+        padding: .5rem 1rem;
+        height: 50px;
+    }
+    .search button img{
+        width: 16px;
+    }
+    .col img{
+        width: 27px;
+    }
+    .humidity,.wind{
+        font-size: .5rem;
+    }
+}
+
+@media screen and (min-width:322px) and (max-width:430px){
+    .card{
+        padding: 3rem 1rem;
+    } 
+} 
